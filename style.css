@@ -1,0 +1,142 @@
+*{
+	box-sizing: border-box;
+}
+/* ubah pengaturan halaman default sehingga konten dianggap sebagai elemen border-box dengan universal selector*/
+body {
+	font-family : 'Quicksand', arial;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	background-color: #FFEBCD;
+}
+/* bagian banner judul*/
+.jumbotron{
+	font-size: 20px;
+	padding: 60px;
+	background-image: url(picture/biji-kopi.png);
+	background-color: #cccc;
+	text-align: center;
+	color: white;
+}
+
+header{
+	display: inline;
+}
+
+nav {
+	background-color: #A0522D;
+    padding: 5px;
+	
+	position: sticky;
+	top: 0;
+}
+
+nav ul{
+	padding-inline: 4rem;
+	display: flex;
+	
+	gap: 2rem;
+}
+nav a {
+	font-size : 18px;
+	font-weight : 400;
+	text-decoration : none;
+	
+	color: white;
+}
+
+nav li {
+	list-style-type: none;
+}
+
+/* apabila disentuh kursornya akan berubah menjadi bold/ menghitam*/
+nav a:hover {
+	font-weight: bold;
+}
+
+main {
+	padding: 20px;
+	
+	display: flex;
+	gap: 1.5rem;
+}
+
+#content {
+	flex: 5;
+	
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 1rem 2rem;
+}
+
+aside {
+	flex: 1;
+}
+
+/* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+	 main {
+		flex-flow: column nowrap;
+	}
+	main aside {
+    align-self: center;
+	}
+}
+
+
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 768px) {
+	nav ul {
+		justify-content: center;
+	}
+	main aside {
+		align-self: stretch;
+	}
+}
+
+
+/*image diatur agar fit dalam posisi tengah memanjang*/
+.featured-image {
+	width: 100%;
+	max-height: 500px;
+	
+	object-fit: fill;
+	object-position: center;
+}
+
+
+/*membuat bayangan pemisah pada setiap artikel*/
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	
+	padding: 20px;
+}
+
+
+h1 {
+	font-family : arial;
+}
+
+h2, h3{
+	color : #F4A460;
+	font-family : arial;
+}
+p{
+	font-family : san-serif;
+}
+
+.profile header {
+	text-align : center;
+}
+
+
+footer{
+	text-align : center;
+	font-family : arial;
+	color : white;
+	background-color :  #CD853F;
+	padding : 25px;
+	width: 100%;
+	margin: 0;
+}
