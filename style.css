@@ -162,11 +162,15 @@ h1 {
 	font-family : arial;
 }
 
-h2, h3{
+h2{
 	color : #F4A460;
 	font-family : arial;
 	text-align: center;
 	padding-bottom: 20px;
+} 
+h3{
+	color: #F4A460;
+	text-decoration: underline;
 }
 p{
 	font-family : san-serif;
