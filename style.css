@@ -83,6 +83,14 @@ main {
 	gap: 1rem 2rem;
 }
 
+#perkenalan{
+	padding-top: 60px;
+}
+
+#produk-kami{
+	padding-top: 60px;
+}
+
 aside {
 	flex: 1;
 }
@@ -157,6 +165,8 @@ h1 {
 h2, h3{
 	color : #F4A460;
 	font-family : arial;
+	text-align: center;
+	padding-bottom: 20px;
 }
 p{
 	font-family : san-serif;
