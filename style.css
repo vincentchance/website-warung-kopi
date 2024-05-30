@@ -31,6 +31,8 @@ nav {
 	top: 0;
 }
 
+
+
 nav ul{
 	padding-inline: 4rem;
 	display: flex;
@@ -52,6 +54,18 @@ nav li {
 /* apabila disentuh kursornya akan berubah menjadi bold/ menghitam*/
 nav a:hover {
 	font-weight: bold;
+}
+
+.tombol{
+	display: none;
+	color: white;
+	font-size: 20pt;
+	text-align: center;
+	font-family: arial;
+}
+ 
+.tombol:hover{
+	cursor: pointer;
 }
 
 main {
@@ -92,6 +106,27 @@ aside {
 	main aside {
 		align-self: stretch;
 	}
+	.menu {
+		display: none;
+	}
+	.menu.aktif{
+		display:inline-block;
+		position: absolute;
+		top: 20px;
+		background: #A0522D;
+		padding: 10px 10px;
+		right: 0;
+		left: 0;
+	}
+ 
+	.menu.aktif li a{
+		padding: 10px;
+		display: inline-block !important;
+	}
+ 
+	.tombol {
+		display: block;
+	}
 }
 
 
@@ -110,7 +145,8 @@ aside {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	border-radius: 5px;
 	
-	padding: 20px;
+	padding: 40px;
+	background-color: white;
 }
 
 

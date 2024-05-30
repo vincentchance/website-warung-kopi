@@ -21,10 +21,13 @@
     </p>
 	</div>
     <nav>
-		<ul>
+		<ul class="menu">
 			<li><a href="#perkenalan">Perkenalan</a></li>
 			<li><a href="#produk-kami">Produk Kami</a></li>
 		</ul>
+		<div class="tombol">
+		 Daftar isi
+		</div>
 	</nav>
     </header>
 	<main>
@@ -78,25 +81,10 @@
 					</figure>
 				</header>
 				<section>
-					<h3>Informasi lainnya</h3>
-					<table>
-						<tr>
-							<th>Negara</th>
-							<td>Indonesia</td>
-						</tr>
-						<tr>
-							<th>Tahun pendirian</th>
-							<td> 1990 </td>
-						</tr>
-						<tr>
-							<th>Kantor Pusat</th>
-							<td>Jakarta</td>
-						</tr>
-						<tr>
-							<th>call center</th>
-							<td>5045</td>
-						</tr>
-					</table>
+					<h3>Tentang Kami</h3>
+					<p>Pertama kali didirikan tahun 2003 di Surabaya
+					oleh HendroPriyono, yang berupa kios serdehana
+					namun menghadirkan produk kopi berkualitas sehingga disukai berbagai kalangan.</p>
 				</section>
 			</article>
 		</aside>
@@ -104,5 +92,17 @@
 	<footer>
 	<p>Warung kopi &copy 2024, Vincent Chance</p>
 	</footer>
+	<script>
+		// deklarasi tombol dan menu
+		const tombol = document.querySelector('.tombol');
+		const menu = document.querySelector('.menu');
+ 
+		// membuat event click
+		// pada saat tombol di click, tambahkan class aktif pada class menu
+		// saat diklik lagi, maka class aktif dihilangkan dari class menu (toggle)
+		tombol.addEventListener('click', () => {
+			menu.classList.toggle('aktif');
+		});
+</script>
   </body>
 </html>
